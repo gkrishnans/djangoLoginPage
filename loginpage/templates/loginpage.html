@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>login</title>
+    <style>
+      body
+        {
+          background-color:lightgrey;
+        }
+    </style>
+  </head>
+  <body>
+  <div style="background-color:white ; padding:40px ; display:block ; border-radius:20px; text-align: left; font-size:15px; float:center	;align-content: center;position:absolute;position:absolute;left: 40%;top:20%
+">
+      <form action="data" method="POST">
+          {% csrf_token %}
+          <div style = "color:black;">
+            <pre><b>UserName     </pre><input type="text" name="UserName" placeholder="Enter the username" style="padding: 9px 32px;border-radius: 12px;font-size:15px"><br><br>
+            <pre><b>Password     </pre><input type="password" name="Password" placeholder="Enter the password"style="padding: 9px 32px;border-radius: 12px;font-size:15px;"
+><br><br><br><br>
+
+          <input type="submit" name="Login" value="Login" style="border-radius: 12px;color:white;background-color:blue;padding: 15px 32px;float:center;margin:auto">
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
